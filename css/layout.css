@@ -1,0 +1,92 @@
+body {
+font-family: sans-serif;
+font-size: 8px;
+}
+
+.wrapper {
+    width: 60%;
+    margin: 5% auto;
+}
+
+.comments-list {
+    list-style-type: none;
+    padding:0;
+    margin-top: 60px;
+}
+.comment {
+    height: 100px;
+    margin-top: 10px;
+    /*border: 1px solid black;*/
+}
+
+/*Left, user info with img, name date*/
+.user-info {
+    float: left;
+    width: 50px;
+}
+.user-info .profile-pic img{
+    max-height: 50px;
+}
+.user-info .username{
+    margin-top: 5px
+}
+.user-info .date{
+    margin-top: 5px;
+    max-height: 20px;
+
+}
+
+/*Right, message and buttons if required */
+.message, .controls {
+    margin-left: 70px;
+}
+
+.message {
+    height:60px;
+    max-height:60px;
+}
+.message .text {
+    resize: none;
+    height: 100%;
+    /*Width = parent - padding*/
+    width: calc(100% - 10px);
+    padding: 5px;
+    background-color: rgb(238, 238, 238);
+    border: none;
+    border-radius: 3px;
+}
+.controls {
+    height:40px;
+}
+
+.controls button{
+    margin-top: 20px;
+    padding: 5px 10px;
+    height: 20px;
+    font-size: 10px;
+    line-height: 10px;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    background: rgb(105, 162, 207);
+    background: -webkit-linear-gradient(rgb(105, 162, 207), rgb(35, 92, 134));
+    background: -o-linear-gradient(rgb(105, 162, 207), rgb(35, 92, 134));
+    background: -moz-linear-gradient(rgb(105, 162, 207), rgb(35, 92, 134));
+    background: linear-gradient(rgb(105, 162, 207), rgb(35, 92, 134));
+}
+
+button .fa {
+    margin-left: 7px;
+}
+.save-button {
+    float: right;
+}
+.save-button .fa-check {
+    color: rgb(100, 250, 11);
+}
+.cancel-button {
+    float: left;
+}
+.cancel-button .fa-times {
+    color: red;
+}
